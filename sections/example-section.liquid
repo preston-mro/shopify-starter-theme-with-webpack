@@ -1,0 +1,50 @@
+
+{%- comment -%}
+  * use semantic HTML
+  * always keep ADA compliance in mind
+  * each section and page should have a heading, even if it needs to be visually-hidden
+    * the site-header has a visually-hidden H1, so all other pages and sections should start with H2
+  * each section and page should use the layout grid
+{%- endcomment -%}
+
+<section id="section_{{ section.id }}" class="example-section">
+  <h2 class="visually-hidden">{{ section.settings.heading }}</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="col-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="col-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="col-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Example - Don't Use",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Example Section"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Example - Don't Use"
+    }
+  ]
+}
+{% endschema %}

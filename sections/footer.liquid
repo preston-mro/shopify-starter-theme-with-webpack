@@ -1,0 +1,20 @@
+<footer id="section_{{ section.id }}" class="site-footer">
+  <h2 class="visually-hidden">{{ section.settings.heading }}</h2>
+</footer>
+
+
+
+{% schema %}
+  {
+    "name": "Footer",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Footer - Additional Site Info"
+     }
+   ]
+  }
+{% endschema %}
