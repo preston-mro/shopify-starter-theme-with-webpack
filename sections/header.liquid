@@ -1,0 +1,51 @@
+<header id="section_{{ section.id }}" class="site-header">
+  <h1 class="visually-hidden">
+
+    {%- assign templateFirst = template | split: '.' | first -%}
+
+    {%- if template == "index" -%}
+      {{ shop.name }}
+    {%- elsif template == "page" -%}
+      {{ page.title }}
+    {%- elsif templateFirst == "page" -%}
+      {{ page.title }}
+    {%- elsif template == "list-collections" -%}
+      A List Of Collections
+    {%- elsif template == "collection" -%}
+      {{ collection.title }} Collection
+    {%- else -%}
+      {{ template }}
+    {%- endif -%}
+
+  </h1>
+</header>
+
+
+
+{%- comment -%}
+<script>
+  console.log('page', "{{ page }}");
+  console.log('title', "{{ page.title }}");
+  console.log('suffix', "{{ page.template_suffix }}");
+  console.log('id', "{{ page.id }}");
+  console.log('handle', "{{ page.handle }}");
+  console.log('template', "{{ template }}");
+</script>
+{%- endcomment -%}
+
+
+
+{% schema %}
+  {
+    "name": "Header",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_sticky_header",
+        "default": true,
+        "label": "Enable Sticky Header"
+      }
+    ]
+  }
+{% endschema %}
