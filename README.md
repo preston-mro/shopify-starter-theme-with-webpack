@@ -4,10 +4,10 @@ This is a minimal bare bones Shopify starter theme.
 
 ## Features
 1. Basic Webpack setup
-    1. Webpack will transpile Sass to CSS and bundle Javascript files
+    1. Webpack will: **transpile** Sass to CSS, **compile** Javascript for older browsers, and **bundle** Javascript files
 2. Custom CSS Framework
-    1. The CSS framework comes with a 16-column grid and a bunch of utility classes
-3. Compatible with both Theme Kit and Shopify CLI
+    1. The CSS framework comes with a 16-column, 6-breakpoint **grid** and a bunch of **utility classes**
+3. Compatible with: **Theme Kit** and **Shopify CLI**
 
 ## Notes
 This will never be a complete Shopify theme. That's not the goal. The goal is to provide a boilerplate for quickly getting you to the point where you can start developing with minimal config. I plan on adding to it but I don't have much free time right now, so I don't know when that will be. Do you remember the old Slate theme? Well, this one has even less stuff- it's a blank slate! * *drum shots* *
@@ -43,3 +43,6 @@ The CSS Framework:
     4. min-width: 1408px - **Large** (lg)
     5. min-width: 1664px - **Extra Large** (xl)
     6. min-width: 1920px - **Extra Extra Large** (xxl)
+5. *Almost* every utility class can be used at each breakpoint
+    1. Example: d-flex, d-sm-flex, d-md-flex, d-bg-flex, d-lg-flex, d-xl-flex, d-xxl-flex
+    2. There are seven utility classes that are not available at breakpoints: *visually-hidden, visually-hidden--inline, skip-link, motion-reduce, clear-fix, img-fluid, img-full-bg*
