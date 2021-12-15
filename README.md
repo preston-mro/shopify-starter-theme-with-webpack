@@ -12,3 +12,11 @@ There is probably lots of room for improvement. As of today it's all working as 
 A brief how-to:  
 1. start Theme Kit or Shopify CLI from the root *shopify-starter-theme-with-webpack* dir
 2. start Webpack from the root *shopify-starter-theme-with-webpack* dir
+3. customize theme files like you normally would
+4. Sass and Javascript are stored in *src/styles* and *src/scripts*
+    1. when changes are made in there, webpack will transpile and bundle and then whichever Shopify tool you're using, to watch the theme files, will upload to Shopify.
+    2. **Required:** use [Sass modules](https://sass-lang.com/blog/the-module-system-is-launched) (e.g. *@use* and *@forward*) when working with the Sass files
+        1. Follow the patterns that area already in place
+        2. Examples:
+            1. if you need access to the variables then pull them in with *@use*
+            2. if you create a new .scss file then the index will need to be updated with a new *@forward* statement
