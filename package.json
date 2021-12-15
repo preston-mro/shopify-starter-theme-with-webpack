@@ -1,0 +1,41 @@
+{
+  "name": "shopify-starter-theme-with-webpack",
+  "version": "1.0.0",
+  "description": "Minimal Shopify starter theme with Webpack and CSS Framework",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
+  },
+  "browserslist": [
+    "last 5 version",
+    "> 2%",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preston-mro/shopify-starter-theme-with-webpack.git"
+  },
+  "keywords": [
+    "shopify"
+  ],
+  "author": "Preston Roberts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/preston-mro/shopify-starter-theme-with-webpack/issues"
+  },
+  "homepage": "https://github.com/preston-mro/shopify-starter-theme-with-webpack#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "postcss": "^8.4.5",
+    "postcss-loader": "^6.2.1",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.4.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

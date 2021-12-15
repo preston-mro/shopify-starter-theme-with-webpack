@@ -1,0 +1,28 @@
+// ROOT VARIABLES
+:root {
+  --bs-font-sans-serif: "Montserrat", "Raleway", "Roboto", sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-root-font-size: 16px;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #231F20;
+  --bs-body-bg: #fff;
+}
+
+// COLORS
+$white: #fff;
+$black: #000;
+$ash: #F7F7F7;
+$coal: #231F20;
+$sky: #D2EEF8;
+$blue: #1E90FF;
+$teal: #366579;
+$pink: #FED7E9;
+$red: #E32530;
+$mint: #B8EBD0;
+$green: #28965A;
+$lotus: #DCD0FF;
+$purple: #63458A;
+$kopi: #603B06;
