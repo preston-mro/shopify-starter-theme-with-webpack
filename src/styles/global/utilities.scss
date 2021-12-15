@@ -1193,6 +1193,10 @@
   text-align: center !important;
 }
 
+.text-right {
+  text-align: right !important;
+}
+
 /* text-decoration */
 .text-underline {
   text-decoration: underline !important;
@@ -2273,6 +2277,9 @@
   .text-sm-center {
     text-align: center !important;
   }
+  .text-sm-right {
+    text-align: right !important;
+  }
   /* text-decoration */
   .text-sm-underline {
     text-decoration: underline !important;
@@ -3303,6 +3310,9 @@
   }
   .text-md-center {
     text-align: center !important;
+  }
+  .text-md-right {
+    text-align: right !important;
   }
   /* text-decoration */
   .text-md-underline {
@@ -4335,6 +4345,9 @@
   .text-bg-center {
     text-align: center !important;
   }
+  .text-bg-right {
+    text-align: right !important;
+  }
   /* text-decoration */
   .text-bg-underline {
     text-decoration: underline !important;
@@ -5365,6 +5378,9 @@
   }
   .text-lg-center {
     text-align: center !important;
+  }
+  .text-lg-right {
+    text-align: right !important;
   }
   /* text-decoration */
   .text-lg-underline {
@@ -6397,6 +6413,9 @@
   .text-xl-center {
     text-align: center !important;
   }
+  .text-xl-right {
+    text-align: right !important;
+  }
   /* text-decoration */
   .text-xl-underline {
     text-decoration: underline !important;
@@ -7427,6 +7446,9 @@
   }
   .text-xxl-center {
     text-align: center !important;
+  }
+  .text-xxl-right {
+    text-align: right !important;
   }
   /* text-decoration */
   .text-xxl-underline {

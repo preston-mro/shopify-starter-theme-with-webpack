@@ -4,10 +4,10 @@ This is a minimal bare bones Shopify starter theme.
 
 ## Features
 1. Basic Webpack setup
-    1. Webpack will transpile Sass to CSS and bundle Javascript files
+    1. Webpack will: **transpile** Sass to CSS, **compile** Javascript for older browsers, and **bundle** Javascript files
 2. Custom CSS Framework
-    1. The CSS framework comes with a 16-column grid and a bunch of utility classes
-3. Compatible with both Theme Kit and Shopify CLI
+    1. The CSS framework comes with a 16-column, 6-breakpoint **grid** and a bunch of **utility classes**
+3. Compatible with: **Theme Kit** and **Shopify CLI**
 
 ## Notes
 This will never be a complete Shopify theme. That's not the goal. The goal is to provide a boilerplate for quickly getting you to the point where you can start developing with minimal config. I plan on adding to it but I don't have much free time right now, so I don't know when that will be. Do you remember the old Slate theme? Well, this one has even less stuff- it's a blank slate! * *drum shots* *
@@ -33,6 +33,16 @@ A brief how-to:
 7. repeat
 
 The CSS Framework:
-1. It's my own work. I built it. And it's been used on several sites and working well. I don't have a repo set up for it yet but I'll do that when I get time and then I'll update this with the link.
+1. The CSS Framework that comes with this starter theme is my own project. I built it. Not from scratch, but I did put *a lot* of work into it. It started out as Bootstrap 5 and then I heavily modified it. I ripped out all the stuff that I rarely use and then I started customizing it to make it my own. It has been used in several site builds and I think it works out quite well. I don't have a repo set up for it yet but I'll do that when I get time and then I'll update this with the link.
 2. The grid uses the standard architecture: **.container > .row. > .col-4**
 3. The utility classes can be found in **/src/styles/global/utilities.scss**
+4. These are the Breakpoints:
+    1. min-width: 640px - **Small** (sm)
+    2. min-width: 896px - **Medium** (md)
+    3. min-width: 1152px - **Big** (bg)
+    4. min-width: 1408px - **Large** (lg)
+    5. min-width: 1664px - **Extra Large** (xl)
+    6. min-width: 1920px - **Extra Extra Large** (xxl)
+5. *Almost* every utility class can be used at each breakpoint
+    1. Example: d-flex, d-sm-flex, d-md-flex, d-bg-flex, d-lg-flex, d-xl-flex, d-xxl-flex
+    2. There are seven utility classes that are not available at breakpoints: *visually-hidden, visually-hidden--inline, skip-link, motion-reduce, clear-fix, img-fluid, img-full-bg*
