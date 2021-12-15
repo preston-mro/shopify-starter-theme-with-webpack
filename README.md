@@ -33,6 +33,13 @@ A brief how-to:
 7. repeat
 
 The CSS Framework:
-1. It's my own work. I built it. And it's been used on several sites and working well. I don't have a repo set up for it yet but I'll do that when I get time and then I'll update this with the link.
+1. The CSS Framework that comes with this starter theme is my own project. I built it. Not from scratch, but I did put *a lot* of work into it. It started out as Bootstrap 5 and then I heavily modified it. I ripped out all the stuff that I rarely use and then I started customizing it to make it my own. It has been used in several site builds and I think it works out quite well. I don't have a repo set up for it yet but I'll do that when I get time and then I'll update this with the link.
 2. The grid uses the standard architecture: **.container > .row. > .col-4**
 3. The utility classes can be found in **/src/styles/global/utilities.scss**
+4. These are the Breakpoints:
+    1. min-width: 640px - **Small** (sm)
+    2. min-width: 896px - **Medium** (md)
+    3. min-width: 1152px - **Big** (bg)
+    4. min-width: 1408px - **Large** (lg)
+    5. min-width: 1664px - **Extra Large** (xl)
+    6. min-width: 1920px - **Extra Extra Large** (xxl)
