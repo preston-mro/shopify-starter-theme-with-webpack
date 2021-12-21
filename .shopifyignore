@@ -2,9 +2,10 @@ package.json
 package-lock.json
 config.yml
 .gitignore
-Dawn-README.md
 README.md
 translation.yml
 webpack.config.js
 node_modules/*.*
 src/*.*
+*.json
+css/*.*
