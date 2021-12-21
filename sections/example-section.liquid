@@ -4,24 +4,35 @@
   * always keep ADA compliance in mind
   * each section and page should have a heading, even if it needs to be visually-hidden
     * the site-header has a visually-hidden H1, so all other pages and sections should start with H2
-  * each section and page should use the layout grid
+  * each section and page should use the layout grid found in \src\styles\global\grid.scss
+
+  Breakpoint Suggestions:
+  320-640(sm) is mobile
+  640(sm)-1152(bg) is tablet
+  >1152(bg) is desktop
+  (just suggestions, not requirements, use own judgement)
 {%- endcomment -%}
 
+
 <section id="section_{{ section.id }}" class="example-section">
-  <h2 class="visually-hidden">{{ section.settings.heading }}</h2>
+  <h2 class="text-center my-3">{{ section.settings.heading }}</h2>
   <div class="container">
     <div class="row">
-      <div class="col-4">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="col-16 col-sm-8 col-bg-4">
+        <h3>Example Section</h3>
+        <p>Placeholder text lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
-      <div class="col-4">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="col-16 col-sm-8 col-bg-4">
+        <h3>Example Section</h3>
+        <p>Placeholder text lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
-      <div class="col-4">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="col-16 col-sm-8 col-bg-4">
+        <h3>Example Section</h3>
+        <p>Placeholder text lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
-      <div class="col-4">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="col-16 col-sm-8 col-bg-4">
+        <h3>Example Section</h3>
+        <p>Placeholder text lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
   </div>
